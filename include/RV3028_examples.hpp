@@ -2,6 +2,6 @@
 
 int runrv3028();
 int UNIXtime();
-int setAlarm();
+void runAlarmDemo();
 int BackupSwitchOverModes();
 int TrickleCharging();
