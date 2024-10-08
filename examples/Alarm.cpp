@@ -1,3 +1,5 @@
+//This example shows how to set alarm interrupts at RV-3028-C7 Real Time Clock.
+
 #include <rv3028.h>
 RV3028 rtc;
 

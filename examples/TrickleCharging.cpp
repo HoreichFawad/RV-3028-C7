@@ -1,3 +1,5 @@
+// This example shows how to set the Trickle Charge Configuration of RTC RV-3028-C7.
+
 #include <rv3028.h>
 
 RV3028 rtc;

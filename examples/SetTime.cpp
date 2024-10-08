@@ -1,3 +1,5 @@
+//This example shows how to set the time on the RTC to the compiler time or a custom time, and how to read the time.
+
 #include <rv3028.h>
 
 RV3028 rtc;
@@ -21,7 +23,12 @@ int runrv3028()
     }
     printf("RTC online!");
     wait_us(100 * 1000);
-    if (rtc.setTime(sec, minute, hour, day, date, month, year) == false)
+    /****************uncomment for setting the time manually ***************/
+       // if (rtc.setTime(sec, minute, hour, day, date, month, year) == false)
+    // {
+    //     printf("Something went wrong setting the time\n");
+    // }
+    if (rtc.setToCompilerTime() == false)
     {
         printf("Something went wrong setting the time\n");
     }

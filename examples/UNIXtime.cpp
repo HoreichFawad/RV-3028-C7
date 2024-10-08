@@ -1,3 +1,5 @@
+//This example shows how to set the UNIX time on the RTC, and how to read it.
+
 #include <rv3028.h>
 RV3028 rtc1;
 
