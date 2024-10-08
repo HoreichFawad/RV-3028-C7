@@ -663,7 +663,7 @@ bool RV3028::setBackupSwitchoverMode(uint8_t val)
 	EEPROMBackup |= val << EEPROMBackup_BSM_SHIFT;	//Shift values into EEPROM Backup Register
 	//Write EEPROM Backup Register
 	if (!writeConfigEEPROM_RAMmirror(EEPROM_Backup_Register, EEPROMBackup)) success = false;
-
+	
 	return success;
 }
 
