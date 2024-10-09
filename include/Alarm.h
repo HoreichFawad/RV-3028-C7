@@ -25,9 +25,6 @@ public:
     // Print the current RTC time
     void printCurrentTime();
 
-    //To set the Alarm
-    void runAlarmDemo();
-
 private:
     InterruptIn interruptPin; // Pin for the alarm interrupt
 
